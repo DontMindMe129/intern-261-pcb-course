@@ -1,0 +1,42 @@
+[
+  {
+    "file": "archives\\ESP32-P4X-EYE-EN.zip",
+    "source": "C:\\Users\\minhn\\Downloads\\ESP32-P4X-EYE-EN (1).zip",
+    "sha256": "7e11e6e8b0aae43f3f27636f62c1715b8c4335c4fe460bfb3c51ae3e951ac9c1"
+  },
+  {
+    "file": "ESP32-P4X-EYE\\PCB_ESP32-P4-EYE-MB_V2.3_20250411.pdf",
+    "source": "ESP32-P4X-EYE-EN (1).zip!ESP32-P4X-EYE/02_PCB/PCB_ESP32-P4-EYE-MB_V2.3_20250411.pdf",
+    "sha256": "c87d29d9d43bc7abea08bc578ad11ce068a3c9707b032a3146af5901e9c720a8"
+  },
+  {
+    "file": "ESP32-P4X-EYE\\PCB_ESP32-P4-EYE-MB_V2.3_20250411_Composite.pdf",
+    "source": "ESP32-P4X-EYE-EN (1).zip!ESP32-P4X-EYE/02_PCB/PCB_ESP32-P4-EYE-MB_V2.3_20250411_Composite.pdf",
+    "sha256": "17f12b41a1cdb6af71918854a233aece20b5b03a88f7de801b64c4f71c726963"
+  },
+  {
+    "file": "ESP32-P4X-EYE\\PCB_ESP32-P4-EYE-MB_V2.3_20250411.brd",
+    "source": "ESP32-P4X-EYE-EN (1).zip!ESP32-P4X-EYE/02_PCB/PCB_ESP32-P4-EYE-MB_V2.3_20250411.brd",
+    "sha256": "bf341b596e52ceb6361799d0ce44e7db9fb56c56717dfb85f051ba5e35726184"
+  },
+  {
+    "file": "archives\\ESP32-P4X-Function-EV-Board-EN.zip",
+    "source": "C:\\Users\\minhn\\Downloads\\ESP32-P4X-Function-EV-Board-EN (1).zip",
+    "sha256": "a72729e87f72b4e693c3596e6dc21126d39824b00ad604d2f497381cea59e07f"
+  },
+  {
+    "file": "ESP32-P4X-Function-EV-Board\\PCB_ESP32-P4X_Function_EV_Board_V1.6_20250618.brd",
+    "source": "ESP32-P4X-Function-EV-Board-EN (1).zip!ESP32-P4X-Function-EV-Board-EN/02_PCB/PCB_ESP32-P4X_Function_EV_Board_V1.6_20250618.brd",
+    "sha256": "b1f09a0e6dee829d300558d7075b3166c4ec9652db33c1fc3f4b9e7f5c078898"
+  },
+  {
+    "file": "ESP32-P4X-Function-EV-Board\\PCB_ESP32-P4X_Function_EV_Board_V1.6_20250618.pdf",
+    "source": "ESP32-P4X-Function-EV-Board-EN (1).zip!ESP32-P4X-Function-EV-Board-EN/02_PCB/PCB_ESP32-P4X_Function_EV_Board_V1.6_20250618.pdf",
+    "sha256": "e4c20836430c18603cfd61c69ed5d9fedbf938585f3f46ed1b7aedfc76c07f36"
+  },
+  {
+    "file": "ESP32_P4X_C5_Function_EV_board-2.0-pcb-layout.pdf",
+    "source": "C:\\Users\\minhn\\Downloads\\ESP32_P4X_C5_Function_EV_board-2.0-pcb-layout.pdf",
+    "sha256": "99f52f5e42d09f31807ab3b434a62d494cc689303bdd6de4cd9d5f3ff5c06e16"
+  }
+]

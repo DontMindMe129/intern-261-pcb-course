@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1470" viewBox="0 0 1600 1470">
+<rect width="100%" height="100%" fill="white"/>
+<text x="800" y="43.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="32" font-weight="bold" fill="#1c2733">Bootloader: nơi lưu, nơi chạy và đường truy cập flash</text>
+<text x="800" y="87.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#1c2733">Minh họa chức năng cho quá trình boot ESP32-P4 bằng ESP-IDF</text>
+<text x="800" y="136.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#1c2733">1. Nạp bản sao: CPU vẫn đang chạy mã trong ROM</text>
+<polyline points="60,170 1210,170 1210,500 60,500 60,170" fill="none" stroke="#1c2733" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="170" y="195.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#1c2733">ESP32-P4</text>
+<rect x="110" y="235" width="260" height="80" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="240.0" y="260.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">ROM</text>
+<text x="240.0" y="289.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Bootloader đầu tiên</text>
+<rect x="460" y="235" width="220" height="80" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="570.0" y="260.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">CPU</text>
+<text x="570.0" y="289.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Chạy mã ROM</text>
+<rect x="890" y="235" width="260" height="80" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="1020.0" y="260.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Bộ điều khiển</text>
+<text x="1020.0" y="289.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">SPI flash</text>
+<rect x="1270" y="235" width="260" height="80" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="1400.0" y="260.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Flash ngoài</text>
+<text x="1400.0" y="289.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Bản gốc bootloader</text>
+<rect x="460" y="385" width="260" height="75" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="590.0" y="407.65" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">SRAM</text>
+<text x="590.0" y="437.35" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Bản sao bootloader</text>
+<polyline points="370,275 460,275" fill="none" stroke="#175da8" stroke-width="3"/>
+<polygon points="460,275 448.0,270.0 448.0,280.0" fill="#175da8"/>
+<text x="415" y="243.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="normal" fill="#175da8">Lệnh</text>
+<polyline points="680,275 890,275" fill="none" stroke="#a6500a" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="890,275 878.0,270.0 878.0,280.0" fill="#a6500a"/>
+<text x="785" y="243.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#a6500a">Yêu cầu đọc</text>
+<polyline points="1150,275 1270,275" fill="none" stroke="#087f72" stroke-width="3"/>
+<polygon points="1270,275 1258.0,270.0 1258.0,280.0" fill="#087f72"/>
+<polygon points="1150,275 1162.0,280.0 1162.0,270.0" fill="#087f72"/>
+<text x="1240" y="243.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="normal" fill="#087f72">SPI</text>
+<polyline points="1020,315 1020,422 720,422" fill="none" stroke="#087f72" stroke-width="3"/>
+<polygon points="720,422 732.0,427.0 732.0,417.0" fill="#087f72"/>
+<text x="862" y="394.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="normal" fill="#087f72">Dữ liệu bootloader</text>
+<text x="960" y="473.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="19" font-weight="normal" fill="#1c2733">Bản sao chưa được thực thi.</text>
+<text x="800" y="532.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#1c2733">Các byte được đọc từ flash và nạp vào SRAM; bản gốc trong flash vẫn được giữ nguyên.</text>
+<text x="800" y="590.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#1c2733">2. Thực thi bản sao: CPU lấy lệnh từ SRAM để tiếp tục khởi tạo</text>
+<polyline points="60,625 1210,625 1210,930 60,930 60,625" fill="none" stroke="#1c2733" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="170" y="650.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#1c2733">ESP32-P4</text>
+<rect x="110" y="710" width="260" height="80" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="240.0" y="735.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">SRAM</text>
+<text x="240.0" y="764.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Bản sao bootloader</text>
+<rect x="460" y="710" width="220" height="80" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="570.0" y="735.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">CPU</text>
+<text x="570.0" y="764.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Chạy mã SRAM</text>
+<rect x="890" y="710" width="260" height="80" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="1020.0" y="735.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Bộ điều khiển</text>
+<text x="1020.0" y="764.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">SPI flash</text>
+<rect x="1270" y="710" width="260" height="80" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="1400.0" y="735.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Flash ngoài</text>
+<text x="1400.0" y="764.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Bootloader + ứng dụng</text>
+<polyline points="370,750 460,750" fill="none" stroke="#175da8" stroke-width="3"/>
+<polygon points="460,750 448.0,745.0 448.0,755.0" fill="#175da8"/>
+<text x="415" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="normal" fill="#175da8">Lệnh</text>
+<polyline points="680,750 890,750" fill="none" stroke="#a6500a" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="890,750 878.0,745.0 878.0,755.0" fill="#a6500a"/>
+<text x="785" y="699.525" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="normal" fill="#a6500a">Cấu hình /</text>
+<text x="785" y="722.475" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="normal" fill="#a6500a">yêu cầu truy cập</text>
+<polyline points="1150,750 1270,750" fill="none" stroke="#087f72" stroke-width="3"/>
+<polygon points="1270,750 1258.0,745.0 1258.0,755.0" fill="#087f72"/>
+<polygon points="1150,750 1162.0,755.0 1162.0,745.0" fill="#087f72"/>
+<text x="1240" y="718.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="17" font-weight="normal" fill="#087f72">SPI</text>
+<text x="650" y="840.825" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#1c2733">CPU vẫn lấy được lệnh từ SRAM trong lúc thiết lập đường flash.</text>
+<text x="650" y="869.175" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="21" font-weight="normal" fill="#1c2733">Sau đó bootloader chuẩn bị ứng dụng và chuyển quyền thực thi.</text>
+<text x="800" y="1000.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#1c2733">3. Mối phụ thuộc cần tránh khi thay đổi đường lấy lệnh</text>
+<rect x="80" y="1080" width="260" height="85" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="210.0" y="1107.65" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Flash ngoài</text>
+<text x="210.0" y="1137.35" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Chứa mã đang chạy</text>
+<rect x="440" y="1080" width="270" height="85" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="575.0" y="1107.65" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Bộ điều khiển</text>
+<text x="575.0" y="1137.35" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">và đường truy cập flash</text>
+<rect x="820" y="1080" width="220" height="85" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="930.0" y="1107.65" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Cache / ánh xạ</text>
+<text x="930.0" y="1137.35" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">cho lệnh CPU</text>
+<rect x="1180" y="1080" width="220" height="85" fill="white" stroke="#1c2733" stroke-width="2"/>
+<text x="1290.0" y="1107.65" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">CPU</text>
+<text x="1290.0" y="1137.35" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Đang thực thi</text>
+<polyline points="340,1122 440,1122" fill="none" stroke="#175da8" stroke-width="3"/>
+<polygon points="440,1122 428.0,1117.0 428.0,1127.0" fill="#175da8"/>
+<polyline points="710,1122 820,1122" fill="none" stroke="#175da8" stroke-width="3"/>
+<polygon points="820,1122 808.0,1117.0 808.0,1127.0" fill="#175da8"/>
+<polyline points="1040,1122 1180,1122" fill="none" stroke="#175da8" stroke-width="3"/>
+<polygon points="1180,1122 1168.0,1117.0 1168.0,1127.0" fill="#175da8"/>
+<text x="1110" y="1050.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#175da8">Lấy lệnh</text>
+<polyline points="1290,1165 1290,1240 575,1240 575,1165" fill="none" stroke="#a6500a" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="575,1165 570.0,1177.0 580.0,1177.0" fill="#a6500a"/>
+<text x="930" y="1206.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="20" font-weight="normal" fill="#a6500a">CPU yêu cầu đổi cấu hình đường truy cập flash</text>
+<text x="800" y="1282.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">Nếu đường này tạm chưa sẵn sàng và lệnh cần đọc không có trong cache,</text>
+<text x="800" y="1311.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="22" font-weight="normal" fill="#1c2733">CPU không lấy được lệnh tiếp theo từ flash.</text>
+<polyline points="105,1375 175,1375" fill="none" stroke="#175da8" stroke-width="3"/>
+<polygon points="175,1375 163.0,1370.0 163.0,1380.0" fill="#175da8"/>
+<text x="335" y="1375.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="20" font-weight="normal" fill="#175da8">Đường lấy lệnh</text>
+<polyline points="590,1375 660,1375" fill="none" stroke="#087f72" stroke-width="3"/>
+<polygon points="660,1375 648.0,1370.0 648.0,1380.0" fill="#087f72"/>
+<text x="820" y="1375.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="20" font-weight="normal" fill="#087f72">Trao đổi dữ liệu</text>
+<polyline points="1060,1375 1130,1375" fill="none" stroke="#a6500a" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="1130,1375 1118.0,1370.0 1118.0,1380.0" fill="#a6500a"/>
+<text x="1290" y="1375.0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="20" font-weight="normal" fill="#a6500a">Điều khiển / cấu hình</text>
+<text x="800" y="1421.85" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#1c2733">Đường phần cứng đã có sẵn. Chép chương trình không tạo bus mới.</text>
+<text x="800" y="1446.15" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="18" font-weight="normal" fill="#1c2733">Hình mô tả chức năng, không khẳng định các thao tác xảy ra đồng thời trên những bus riêng.</text>
+</svg>

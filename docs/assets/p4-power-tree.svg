@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="790" viewBox="0 0 1240 790" role="img" aria-labelledby="title desc">
+<title id="title">ESP32-P4 DevKit — Phân phối nguồn</title>
+<desc id="desc">Nguồn 3V3 cấp trực tiếp các đầu vào phù hợp, cấp LDO nội bộ P4 và buck U5. LDO cấp Flash, PSRAM và MIPI; U5 cấp VDD_HP.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#24657a"/></marker></defs>
+<style>
+text{font-family:'Segoe UI',Arial,sans-serif;fill:#203e51}.title{font-size:25px;font-weight:700}.h{font-size:21px;font-weight:600}.b{font-size:18px}.small{font-size:15px;fill:#526d7c}.box{fill:#f5f9fb;stroke:#9bb6c5;stroke-width:1.5}.ldo{fill:#edf7f5;stroke:#62a393;stroke-width:1.5}.src{fill:#153e57;stroke:#153e57;stroke-width:1.5}.power{fill:none;stroke:#24657a;stroke-width:2.5;marker-end:url(#arrow)}.bus{fill:none;stroke:#24657a;stroke-width:2.5}.control{fill:none;stroke:#24657a;stroke-width:2;stroke-dasharray:7 5;marker-end:url(#arrow)}
+</style>
+<rect width="1240" height="790" fill="white"/>
+<text x="28" y="36" class="title">ESP32-P4 DevKit — Phân phối nguồn</text>
+<path d="M826 64H872" class="power"/><text x="884" y="70" class="small">Công suất</text>
+<path d="M1030 64H1076" class="control"/><text x="1088" y="70" class="small">Điều khiển</text>
+<path d="M178 365H210" class="bus"/>
+<path d="M210 140V640" class="bus"/>
+<path d="M210 140H260" class="power"/>
+<path d="M210 385H260" class="power"/>
+<path d="M210 640H260" class="power"/>
+<rect x="28" y="320" width="150" height="90" rx="8" class="src"/>
+<text x="65" y="357" font-size="25" font-weight="700" fill="white" style="fill:white">3V3</text>
+<text x="48" y="384" font-size="16" style="fill:#dbe9f0">Từ buck U11</text>
+<rect x="260" y="92" width="450" height="145" rx="8" class="box"/>
+<text x="282" y="124" class="h">Đầu vào P4 nối trực tiếp 3V3</text>
+<text x="282" y="155" class="b">VDD_LP; VDD_IO_0/4/5/6</text>
+<text x="282" y="184" class="b">VDD_ANA; VDD_BAT</text>
+<text x="282" y="213" class="b">VDD_DCDCC; USB PHY qua R72</text>
+<rect x="260" y="270" width="270" height="235" rx="8" class="ldo"/>
+<text x="282" y="300" class="h">LDO nội bộ P4</text>
+<text x="282" y="328" class="small">Nhận qua VDD_LDO (75)</text>
+<text x="282" y="360" class="b">Flash LDO</text>
+<text x="282" y="410" class="b">PSRAM LDO</text>
+<text x="282" y="460" class="b">VO3 LDO</text>
+<path d="M530 350H770" class="power"/>
+<text x="552" y="339" class="small">VDDO_FLASH · 3,3 V</text>
+<path d="M530 400H770" class="power"/>
+<text x="552" y="389" class="small">VDDO_PSRAM · ~1,9 V*</text>
+<path d="M530 450H770" class="power"/>
+<text x="552" y="439" class="small">VDDO_3 · 2,5 V*</text>
+<rect x="770" y="322" width="440" height="56" rx="7" class="box"/>
+<text x="790" y="347" class="b">Flash U6 + VDD_FLASH_IO của P4</text>
+<text x="790" y="368" class="small">Nguồn bộ nhớ ngoài và giao tiếp Flash</text>
+<rect x="770" y="376" width="440" height="48" rx="7" class="box"/>
+<text x="790" y="407" class="b">VDD_PSRAM_0/1 của P4</text>
+<rect x="770" y="426" width="440" height="48" rx="7" class="box"/>
+<text x="790" y="457" class="b">VDD_MIPI_DPHY của P4</text>
+<rect x="260" y="535" width="450" height="36" rx="6" fill="#fff" stroke="#9bb6c5" stroke-dasharray="5 4"/>
+<text x="282" y="559" class="small">P4: EN_DCDC / FB_DCDC</text>
+<path d="M485 571V590" class="control"/>
+<rect x="260" y="590" width="450" height="100" rx="8" class="box"/>
+<text x="282" y="625" class="h">Buck U5 TLV62569 + L2 + tụ</text>
+<text x="282" y="657" class="b">Nguồn lõi từ bên ngoài P4</text>
+<path d="M710 640H770" class="power"/>
+<rect x="770" y="590" width="440" height="100" rx="8" class="box"/>
+<text x="790" y="625" class="h">VDD_HP · chân 26/76/91 của P4</text>
+<text x="790" y="657" class="b">Miền nguồn lõi; không nối thẳng 3V3</text>
+<text x="28" y="733" class="small">* Mức dự kiến khi được cấu hình phù hợp; các đầu ra PSRAM/VO3 mặc định tắt theo hướng dẫn hãng.</text>
+<text x="28" y="760" class="small">VDDO_4 hiện chưa sử dụng. Sơ đồ thể hiện phân phối nguồn chức năng, không phải vị trí linh kiện trên PCB.</text>
+</svg>

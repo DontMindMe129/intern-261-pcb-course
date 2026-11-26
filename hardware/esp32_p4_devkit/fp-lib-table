@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "DevKit") (type "KiCad") (uri "${KIPRJMOD}/libraries/DevKit.pretty") (options "") (descr ""))
+)

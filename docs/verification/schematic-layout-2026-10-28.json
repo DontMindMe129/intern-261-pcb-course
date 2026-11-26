@@ -1,0 +1,42 @@
+{
+  "scope": "Schematic presentation only",
+  "files": [
+    {
+      "file": "ESP32_P4.kicad_sch",
+      "original_objects_preserved": 456,
+      "added_graphics_and_wire_segments": {
+        "rectangle": 1,
+        "text": 1
+      }
+    },
+    {
+      "file": "esp32_p4_devkit.kicad_sch",
+      "original_objects_preserved": 26,
+      "added_graphics_and_wire_segments": {}
+    },
+    {
+      "file": "Power.kicad_sch",
+      "original_objects_preserved": 154,
+      "added_graphics_and_wire_segments": {
+        "wire": 1,
+        "label": 1
+      }
+    },
+    {
+      "file": "USB_GPIO.kicad_sch",
+      "original_objects_preserved": 50,
+      "added_graphics_and_wire_segments": {
+        "label": 6,
+        "wire": 3,
+        "text": 3,
+        "rectangle": 2
+      }
+    }
+  ],
+  "component_entries_unchanged": 89,
+  "named_nets_unchanged": 119,
+  "erc_items_before": 75,
+  "erc_items_after": 75,
+  "erc_equivalent_after_ignoring_positions_and_representative_net_alias_pair": true,
+  "symbols_pins_values_labels_hierarchy_unchanged": true
+}

@@ -1,0 +1,36 @@
+# Bản nháp, file tạm và cấu hình cá nhân
+/tmp/
+/outputs/
+/.obsidian/
+.history/
+__pycache__/
+*.pyc
+Desktop.ini
+Thumbs.db
+.DS_Store
+~$*.xlsx
+
+# File KiCad tự sinh và bản sao trước khi sửa
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*.bak
+~*.lck
+*.lck
+*-backups/
+backups/
+_restore_backup_*/
+*.before-*.kicad_pcb
+/hardware/esp32_p4_devkit_layout_v2/
+
+# File xuất cục bộ. Bộ gia công chính thức đi cùng bản phát hành.
+*.gbr
+*.gbrjob
+*.drl
+*.pos
+/hardware/esp32_p4_devkit/esp32_p4_devkit*.pdf
+/ESP32-P4_Ghi_chu_schematic_PCB.pdf
+/ESP32-P4_Ghi_chu_thiet_ke.pdf
+/ESP32-P4_Hardware_Design.pdf
+/docs/ESP32-P4_Hardware_Design_preview.html

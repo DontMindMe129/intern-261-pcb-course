@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="board-current" name="Bản hiện hành">
+    <mxGraphModel page="1" pageWidth="1400" pageHeight="950" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ESP32-P4 DevKit" vertex="1" parent="1" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=32;fontStyle=1;fontColor=#172e3e;">
+          <mxGeometry x="40" y="26" width="1320" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="power_label" value="Cấp nguồn và đo dòng" vertex="1" parent="1" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontStyle=1;fontColor=#172e3e;">
+          <mxGeometry x="40" y="90" width="1320" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="inputs" value="J3 và J5&#10;USB-C 5 V&#10;J3 adapter · J5 VBUS" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f2f5f8;strokeWidth=2;">
+          <mxGeometry x="40" y="131" width="248" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mux" value="U7 TPS2121&#10;Chọn nguồn&#10;5V_MUX" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f2f5f8;strokeWidth=2;">
+          <mxGeometry x="308" y="131" width="248" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sense" value="R24 · 10 mΩ&#10;5V_SYS sau shunt&#10;U8 INA226 đo dòng/áp" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f2f5f8;strokeWidth=2;">
+          <mxGeometry x="576" y="131" width="248" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="buck" value="U11 AP63300 + L3&#10;Nguồn chính 3V3&#10;P4, C6 và ngoại vi" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f2f5f8;strokeWidth=2;">
+          <mxGeometry x="844" y="131" width="248" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="core" value="U5 TLV62569 + L2&#10;VDD_HP&#10;Nguồn lõi P4" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f2f5f8;strokeWidth=2;">
+          <mxGeometry x="1112" y="131" width="248" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p_inputs" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;" source="inputs" target="mux" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p_mux" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;" source="mux" target="sense" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p_sense" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;" source="sense" target="buck" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p_buck" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;" source="buck" target="core" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="io_label" value="Xử lý và giao tiếp" vertex="1" parent="1" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=19;fontStyle=1;fontColor=#172e3e;">
+          <mxGeometry x="40" y="265" width="1320" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" value="U4 ESP32-P4 rev 1.3&#10;Bộ xử lý chính&#10;Y1 40 MHz · PSRAM trong package&#10;SW1 RESET · SW2 BOOT&#10;I²C dùng chung, có U8 INA226" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#e7eff5;strokeWidth=2;">
+          <mxGeometry x="482" y="310" width="436" height="552" as="geometry" />
+        </mxCell>
+        <mxCell id="j5" value="J5 và J11&#10;J5 · USB Serial/JTAG&#10;J11 · USB 2.0 High-Speed" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="40" y="310" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="j4" value="J4 Camera&#10;MIPI CSI-2 · 2 lane&#10;I²C · CAM_RESET" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="970" y="310" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="l0" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.083333;" source="j5" target="p4" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r0" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.083333;entryX=0;entryY=0.5;" source="p4" target="j4" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u1" value="U1 ESP32-C6-MINI-1-N4&#10;SDIO 4-bit · Wi-Fi/BLE&#10;J1 UART nạp C6" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="40" y="425" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="j6" value="J6 Màn hình&#10;MIPI DSI · 2 lane&#10;3V3 · I²C" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="970" y="425" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.291667;" source="u1" target="p4" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.291667;entryX=0;entryY=0.5;" source="p4" target="j6" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" value="U2 IP101GRI và J9&#10;RMII tới P4&#10;Ethernet 10/100 qua RJ45" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="40" y="540" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="aud" value="U10 ES8311 · U12 NS4150B&#10;I²S · I²C&#10;Micro MK1 · loa ngoài J10" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="970" y="540" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="u2" target="p4" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" source="p4" target="aud" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="j2" value="J2 microSD&#10;SDMMC 4-bit&#10;Card detect" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="40" y="655" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="u9" value="U9 VEML7700-TT&#10;Cảm biến ánh sáng · I²C" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="970" y="655" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.708333;" source="j2" target="p4" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.708333;entryX=0;entryY=0.5;" source="p4" target="u9" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u6" value="U6 W25Q128JVSIQ&#10;Flash QSPI 16 MB" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="40" y="770" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="j7" value="J7 Header 2×12&#10;13 GPIO · I²C&#10;3V3 · 5V_SYS · GND" vertex="1" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=15;fontColor=#172e3e;strokeColor=#9aaab5;fillColor=#f6f8fa;strokeWidth=2;">
+          <mxGeometry x="970" y="770" width="390" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.916667;" source="u6" target="p4" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" style="endArrow=block;endFill=1;strokeColor=#526575;strokeWidth=2;startArrow=block;startFill=1;exitX=1;exitY=0.916667;entryX=0;entryY=0.5;" source="p4" target="j7" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" value="Bản KiCad chính · hardware/esp32_p4_devkit · 26/11/2026" vertex="1" parent="1" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontStyle=1;fontColor=#172e3e;">
+          <mxGeometry x="40" y="897" width="1320" height="28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-0" name="Lưu trữ · 01 - Tổng quan - P4 trung tâm">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1920" pageHeight="1080">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b1" value="ESP32-P4 DEV-KIT — IoT &amp; Edge AI" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=34;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="20" width="1800" height="65" />
+        </mxCell>
+        <mxCell id="b2" value="Đã chốt phạm vi chức năng • Giao tiếp là phương án thiết kế • GPIO và module chưa chốt" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="80" y="85" width="1760" height="45" />
+        </mxCell>
+        <mxCell id="b3" value="ESP32-P4 • revision 3.x&#10;&#10;CPU + DMA + SRAM / PSRAM&#10;Xử lý ảnh và suy luận AI&#10;&#10;CSI / DSI • SDMMC / SDIO&#10;I²C • GPIO / UART / SPI / ADC&#10;&#10;Radio Wi-Fi / Bluetooth ở module ngoài" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontStyle=1;fontColor=#20354a;fillColor=#e9f2fb;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="730" y="270" width="460" height="500" />
+        </mxCell>
+        <mxCell id="b4" value="NHÓM 1 — NGUỒN &amp; KHỞI ĐỘNG&#10;USB 5 V / nguồn ngoài 5 V + bảo vệ&#10;Chọn nguồn → buck 3V3 → các rail P4&#10;RESET / BOOT • thạch anh • Flash" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#f2f6fa;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="180" width="490" height="170" />
+        </mxCell>
+        <mxCell id="b5" value="NHÓM 2 — NẠP / DEBUG&#10;USB-C → USB Serial/JTAG&#10;Giữ GPIO24/25 • RESET / BOOT&#10;Điểm truy cập UART phục vụ kiểm tra" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#f2f6fa;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="440" width="490" height="150" />
+        </mxCell>
+        <mxCell id="b6" value="NHÓM 2 — HEADER ĐA DỤNG&#10;GPIO còn tự do + 3V3 / 5V / GND&#10;Giữ khả năng ADC / UART / SPI / PWM&#10;Chân dùng chung phải ghi rõ tải trên board" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#f2f6fa;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="680" width="490" height="170" />
+        </mxCell>
+        <mxCell id="b7" value="KHÔNG DÂY&#10;Module Wi-Fi / Bluetooth theo lựa chọn&#10;SDIO 4-bit + điều khiển / đường nạp" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=21;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1370" y="170" width="490" height="140" />
+        </mxCell>
+        <mxCell id="b8" value="CAMERA CẮM RỜI&#10;MIPI-CSI + I²C + tín hiệu phụ&#10;Đầu nối và nguồn theo module" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=21;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1370" y="340" width="490" height="140" />
+        </mxCell>
+        <mxCell id="b9" value="MÀN HÌNH CẮM RỜI&#10;MIPI-DSI + điều khiển / đèn nền&#10;Cảm ứng chưa thuộc phạm vi đã chốt" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=21;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1370" y="510" width="490" height="140" />
+        </mxCell>
+        <mxCell id="b10" value="THẺ microSD&#10;SDMMC 4-bit riêng + Card Detect nếu dùng&#10;Lưu ảnh, mô hình, log và tài nguyên" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=21;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1370" y="680" width="490" height="140" />
+        </mxCell>
+        <mxCell id="b11" value="ĐO ĐIỆN NĂNG&#10;Shunt + IC đo ngoài P4 → I²C&#10;Vị trí đo và dải đo chưa chốt" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=21;fontStyle=0;fontColor=#20354a;fillColor=#fff5e8;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="730" y="870" width="460" height="130" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=none;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="550" y="265" />
+            <mxPoint as="targetPoint" x="730" y="350" />
+            <Array as="points">
+              <mxPoint x="640" y="265" />
+              <mxPoint x="640" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="550" y="515" />
+            <mxPoint as="targetPoint" x="730" y="515" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="730" y="700" />
+            <mxPoint as="targetPoint" x="550" y="765" />
+            <Array as="points">
+              <mxPoint x="640" y="700" />
+              <mxPoint x="640" y="765" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1190" y="350" />
+            <mxPoint as="targetPoint" x="1370" y="240" />
+            <Array as="points">
+              <mxPoint x="1280" y="350" />
+              <mxPoint x="1280" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1190" y="460" />
+            <mxPoint as="targetPoint" x="1370" y="410" />
+            <Array as="points">
+              <mxPoint x="1280" y="460" />
+              <mxPoint x="1280" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1190" y="570" />
+            <mxPoint as="targetPoint" x="1370" y="580" />
+            <Array as="points">
+              <mxPoint x="1280" y="570" />
+              <mxPoint x="1280" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="1190" y="680" />
+            <mxPoint as="targetPoint" x="1370" y="750" />
+            <Array as="points">
+              <mxPoint x="1280" y="680" />
+              <mxPoint x="1280" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="960" y="870" />
+            <mxPoint as="targetPoint" x="960" y="770" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b20" value="Nhóm 2: giao tiếp cho chức năng trên kit được dành riêng; GPIO còn lại đưa ra header. Đo nguồn cần cả đường công suất và I²C." vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=19;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="1005" width="1800" height="50" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="esp32-p4-core" name="Lưu trữ · 02 - Nhóm 1 - Phần cốt lõi">
+    <mxGraphModel dx="1420" dy="1130" grid="1" gridSize="10" page="1" pageWidth="1420" pageHeight="1130">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ESP32-P4 — Nhóm 1: phần cốt lõi" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#1c2733;fontSize=32;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="28" width="1300" height="48" />
+        </mxCell>
+        <mxCell id="boundary" value="" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;dashed=1;dashPattern=8 6;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="700" y="130" width="650" height="900" />
+        </mxCell>
+        <mxCell id="package" value="ESP32-P4 (ranh giới package)" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#1c2733;fontSize=23;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="700" y="88" width="650" height="40" />
+        </mxCell>
+        <mxCell id="left-label" value="PHẦN THIẾT KẾ THÊM BÊN NGOÀI" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#1c2733;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="137" width="450" height="40" />
+        </mxCell>
+        <mxCell id="right-label" value="PHẦN ĐÃ CÓ SẴN" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#1c2733;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="785" y="137" width="500" height="40" />
+        </mxCell>
+        <mxCell id="ext-0" value="Nguồn vào + mạch ổn áp&#10;DCDC ngoài + tụ lọc nguồn" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="195" width="450" height="105" />
+        </mxCell>
+        <mxCell id="int-0" value="Quản lý nguồn&#10;LDO nội bộ và điều khiển DCDC" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="boundary">
+          <mxGeometry as="geometry" x="85" y="65" width="500" height="105" />
+        </mxCell>
+        <mxCell id="edge-0" value="Nguồn / điều khiển" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;fontFamily=Arial;fontSize=17;verticalAlign=bottom;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="ext-0" target="int-0">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="ext-1" value="Thạch anh 40 MHz&#10;và tụ tải" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="345" width="450" height="105" />
+        </mxCell>
+        <mxCell id="int-1" value="Mạch dao động&#10;PLL và phân phối clock" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="boundary">
+          <mxGeometry as="geometry" x="85" y="215" width="500" height="105" />
+        </mxCell>
+        <mxCell id="edge-1" value="XTAL_P / XTAL_N" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;fontFamily=Arial;fontSize=17;verticalAlign=bottom;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="ext-1" target="int-1">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="ext-2" value="IC Flash ngoài&#10;và tụ lọc nguồn" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="495" width="450" height="105" />
+        </mxCell>
+        <mxCell id="int-2" value="Bộ điều khiển SPI Flash&#10;và ROM khởi động" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="boundary">
+          <mxGeometry as="geometry" x="85" y="365" width="500" height="105" />
+        </mxCell>
+        <mxCell id="edge-2" value="Bus Flash" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;fontFamily=Arial;fontSize=17;verticalAlign=bottom;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="ext-2" target="int-2">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="ext-3" value="Mạch tạo trễ reset&#10;và nút RESET" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="645" width="450" height="105" />
+        </mxCell>
+        <mxCell id="int-3" value="Logic bật chip&#10;và reset" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="boundary">
+          <mxGeometry as="geometry" x="85" y="515" width="500" height="105" />
+        </mxCell>
+        <mxCell id="edge-3" value="CHIP_PU" style="edgeStyle=none;html=0;endArrow=classic;startArrow=none;strokeWidth=2;fontFamily=Arial;fontSize=17;verticalAlign=bottom;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="ext-3" target="int-3">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="ext-4" value="Mạch kéo mức strapping&#10;và nút BOOT" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="795" width="450" height="105" />
+        </mxCell>
+        <mxCell id="int-4" value="Chốt cấu hình strapping&#10;và logic chọn chế độ boot" style="rounded=0;whiteSpace=wrap;html=0;fontFamily=Arial;fontSize=23;strokeColor=#1c2733;fillColor=#ffffff;strokeWidth=2;" vertex="1" parent="boundary">
+          <mxGeometry as="geometry" x="85" y="665" width="500" height="105" />
+        </mxCell>
+        <mxCell id="edge-4" value="Chân strapping boot" style="edgeStyle=none;html=0;endArrow=classic;startArrow=none;strokeWidth=2;fontFamily=Arial;fontSize=17;verticalAlign=bottom;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="ext-4" target="int-4">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="memory-note" value="CPU, SRAM và ROM đã có sẵn.&#10;PSRAM của mã chip đang xét nằm trong package." style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#1c2733;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="725" y="935" width="600" height="65" />
+        </mxCell>
+        <mxCell id="note-1" value="Mũi tên biểu diễn liên kết chức năng, chưa phải các đường nối schematic." style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#1c2733;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1050" width="1300" height="35" />
+        </mxCell>
+        <mxCell id="note-2" value="Mạch nguồn cấp cho toàn hệ thống; các rail và linh kiện sẽ được tách ở bước sau." style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#1c2733;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1085" width="1300" height="35" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-2" name="Lưu trữ · 03 - Nhóm 2 - Giao tiếp riêng và GPIO đa dụng">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1800" pageHeight="1150">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b1" value="NHÓM 2 — GIAO TIẾP RIÊNG + GPIO ĐA DỤNG" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=30;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="20" width="1700" height="60" />
+        </mxCell>
+        <mxCell id="b2" value="Chốt phương án 2; chỉ bố trí tháo nối ở các nhánh có nhu cầu cụ thể" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="90" width="1680" height="45" />
+        </mxCell>
+        <mxCell id="b3" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;dashed=1;">
+          <mxGeometry as="geometry" x="1050" y="190" width="690" height="760" />
+        </mxCell>
+        <mxCell id="b4" value="PHẦN CÓ SẴN TRONG P4" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1080" y="200" width="630" height="50" />
+        </mxCell>
+        <mxCell id="b5" value="USB-C + CC + bảo vệ ESD&#10;Cổng nạp / console / debug" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontStyle=0;fontColor=#20354a;fillColor=#f2f6fa;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="290" width="700" height="120" />
+        </mxCell>
+        <mxCell id="b6" value="USB Serial/JTAG&#10;GPIO24 = D− • GPIO25 = D+" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1090" y="290" width="610" height="120" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="760" y="350" />
+            <mxPoint as="targetPoint" x="1090" y="350" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b8" value="Điểm truy cập UART mức logic&#10;GND và tín hiệu theo pinout sẽ chọn" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontStyle=0;fontColor=#20354a;fillColor=#f2f6fa;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="470" width="700" height="120" />
+        </mxCell>
+        <mxCell id="b9" value="Bộ điều khiển UART + GPIO Matrix&#10;Dành chân phục vụ kiểm tra / khôi phục" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1090" y="470" width="610" height="120" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="760" y="530" />
+            <mxPoint as="targetPoint" x="1090" y="530" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b11" value="Header mở rộng đa dụng&#10;GPIO còn tự do + nguồn / GND" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontStyle=0;fontColor=#20354a;fillColor=#f2f6fa;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="650" width="700" height="120" />
+        </mxCell>
+        <mxCell id="b12" value="GPIO còn lại sau khi cấp cho nhóm 3&#10;Có thể cấu hình UART / SPI / I²C / PWM" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1090" y="650" width="610" height="120" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="760" y="710" />
+            <mxPoint as="targetPoint" x="1090" y="710" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b14" value="Đầu vào analog qua header&#10;Mạch điều hòa tín hiệu theo ứng dụng" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontStyle=0;fontColor=#20354a;fillColor=#f2f6fa;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="830" width="700" height="120" />
+        </mxCell>
+        <mxCell id="b15" value="Ưu tiên giữ một số chân có ADC&#10;Giới hạn điện áp theo datasheet" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1090" y="830" width="610" height="120" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=none;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="760" y="890" />
+            <mxPoint as="targetPoint" x="1090" y="890" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b17" value="Quy tắc header: tên chính GPIOxx; bảng pinout ghi chức năng và tải dùng chung.&#10;Không mặc định thêm pull-up / lọc / chuyển mức lên mọi chân GPIO.&#10;Tắt peripheral bằng firmware không tách tải ngoài chip; cần đánh giá hoặc có phần tử tháo nối.&#10;Giữ GPIO35/36 cho strapping/BOOT; các chân tốc độ cao dùng đầu nối dành riêng." vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="60" y="970" width="1680" height="140" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-3" name="Lưu trữ · 04 - Nhóm 3 - Năm phần mở rộng">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageWidth="1920" pageHeight="1600">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b1" value="NHÓM 3 — KHÔNG DÂY / CAMERA / MÀN HÌNH / microSD / ĐO ĐIỆN NĂNG" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=28;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="20" width="1820" height="60" />
+        </mxCell>
+        <mxCell id="b2" value="Phạm vi đã chốt • Module, GPIO, mức nguồn và vị trí đo sẽ xác định khi thiết kế chi tiết" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="90" width="1820" height="50" />
+        </mxCell>
+        <mxCell id="b3" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;dashed=1;">
+          <mxGeometry as="geometry" x="1120" y="200" width="740" height="1130" />
+        </mxCell>
+        <mxCell id="b4" value="PHẦN CÓ SẴN TRONG P4" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1140" y="210" width="700" height="50" />
+        </mxCell>
+        <mxCell id="b5" value="PHẦN BỔ SUNG NGOÀI P4" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="210" width="780" height="50" />
+        </mxCell>
+        <mxCell id="b6" value="MODULE WI-FI / BLUETOOTH TRÊN KIT&#10;ESP32-C6 là ứng viên (Wi-Fi + BLE)&#10;Nguồn, anten, reset và đường nạp riêng" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="300" width="780" height="150" />
+        </mxCell>
+        <mxCell id="b7" value="Một slot SDMMC dùng SDIO 4-bit&#10;ESP-Hosted + tín hiệu điều khiển&#10;Slot và chân cụ thể chưa chốt" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1160" y="300" width="660" height="150" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="830" y="375" />
+            <mxPoint as="targetPoint" x="1160" y="375" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b9" value="SDIO" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="845" y="325" width="260" height="38" />
+        </mxCell>
+        <mxCell id="b10" value="CAMERA CẮM QUA ĐẦU NỐI&#10;Nguồn + mạch hỗ trợ theo module&#10;I²C, reset, power-down / clock theo nhu cầu" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="500" width="780" height="150" />
+        </mxCell>
+        <mxCell id="b11" value="MIPI-CSI + ISP: nhận / xử lý ảnh&#10;Bus I²C dành cho camera&#10;GPIO cho tín hiệu phụ" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1160" y="500" width="660" height="150" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="830" y="575" />
+            <mxPoint as="targetPoint" x="1160" y="575" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b13" value="CSI + điều khiển" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="845" y="525" width="260" height="38" />
+        </mxCell>
+        <mxCell id="b14" value="MÀN HÌNH CẮM QUA ĐẦU NỐI&#10;Nguồn + điều khiển đèn nền nếu cần&#10;Reset / khởi tạo theo module" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="700" width="780" height="150" />
+        </mxCell>
+        <mxCell id="b15" value="MIPI-DSI: xuất dữ liệu hiển thị&#10;GPIO / PWM / I²C theo module&#10;Chưa chốt cảm ứng" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1160" y="700" width="660" height="150" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="830" y="775" />
+            <mxPoint as="targetPoint" x="1160" y="775" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b17" value="DSI + điều khiển" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="845" y="725" width="260" height="38" />
+        </mxCell>
+        <mxCell id="b18" value="KHE THẺ microSD&#10;Nguồn, pull-up và bảo vệ theo giao tiếp&#10;Card Detect nếu dùng" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="900" width="780" height="150" />
+        </mxCell>
+        <mxCell id="b19" value="Slot SDMMC còn lại: bus 4-bit riêng&#10;CLK + CMD + D0…D3&#10;Đề xuất 3,3 V, chưa chọn UHS-I" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1160" y="900" width="660" height="150" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="830" y="975" />
+            <mxPoint as="targetPoint" x="1160" y="975" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b21" value="SDMMC" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="845" y="925" width="260" height="38" />
+        </mxCell>
+        <mxCell id="b22" value="KHỐI ĐO ĐIỆN NĂNG&#10;Shunt + IC đo dòng / áp&#10;Mắc trên đường nguồn cần đo" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontStyle=0;fontColor=#20354a;fillColor=#eef7f3;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="1100" width="780" height="150" />
+        </mxCell>
+        <mxCell id="b23" value="I²C quản lý board: đọc số đo&#10;GPIO Alert nếu cần&#10;Firmware tích phân công suất theo thời gian" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1160" y="1100" width="660" height="150" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=classic;strokeWidth=2;strokeColor=#20354a;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="830" y="1175" />
+            <mxPoint as="targetPoint" x="1160" y="1175" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b25" value="I²C / Alert" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="845" y="1125" width="260" height="38" />
+        </mxCell>
+        <mxCell id="b26" value="ĐƯỜNG NĂNG LƯỢNG ĐO&#10;Nguồn → shunt → tải cần đo&#10;Cấp nguồn IC đo riêng; I²C chỉ mang dữ liệu" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#fff5e8;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="1310" width="780" height="120" />
+        </mxCell>
+        <mxCell id="b27" value="CPU + DMA + SRAM / PSRAM&#10;Nhận ảnh → xử lý / AI → hiển thị / mạng&#10;microSD lưu dữ liệu; không thay thế RAM" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontStyle=0;fontColor=#20354a;fillColor=#e9f2fb;strokeColor=#20354a;strokeWidth=2;">
+          <mxGeometry as="geometry" x="1160" y="1360" width="660" height="120" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" style="edgeStyle=none;html=0;endArrow=classic;startArrow=none;strokeWidth=2;strokeColor=#20354a;dashed=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="440" y="1310" />
+            <mxPoint as="targetPoint" x="440" y="1250" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b29" value="Nguồn lấy từ nhóm 1; phải tính lại công suất và rail. Nhóm 3 được cấp chân trước, GPIO còn tự do chuyển sang nhóm 2.&#10;Loa, micro và Ethernet không thuộc phạm vi đã chốt. Các đường bus không mô tả đầy đủ từng dây." vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontStyle=0;fontColor=#20354a;fillColor=#ffffff;strokeColor=none;strokeWidth=2;">
+          <mxGeometry as="geometry" x="50" y="1500" width="1780" height="70" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,1988 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b06e3b79-94c3-4f0b-8b57-7a4b3d580442")
+	(paper "A3")
+	(title_block
+		(title "ESP32-P4 DevKit / Design Block")
+		(date "2026-11-16")
+		(rev "2026-11")
+	)
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 175.9 59.8) (xy 177.5 60.5) (xy 175.9 61.2)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "015ee3f7-4d0c-4f8e-b347-e3ef7b033cad")
+	)
+	(polyline
+		(pts
+			(xy 308.4 172.3) (xy 310 173) (xy 308.4 173.7)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0478b163-a1ff-4234-96d7-6d9704b6ab32")
+	)
+	(polyline
+		(pts
+			(xy 111.6 125.2) (xy 110 124.5) (xy 111.6 123.8)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1025e2fc-e8dd-488a-89ed-eeead6927dd5")
+	)
+	(polyline
+		(pts
+			(xy 221.3 237.6) (xy 222 236) (xy 222.7 237.6)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "11f93d9f-1394-4be6-9acc-4fb20337ee56")
+	)
+	(rectangle
+		(start 311 239)
+		(end 402 251)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1229c5c6-efa2-44a2-8869-2f25a747a71d")
+	)
+	(polyline
+		(pts
+			(xy 111.6 184.2) (xy 110 183.5) (xy 111.6 182.8)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "13f8fc90-a870-492d-a466-7079e875f1c6")
+	)
+	(polyline
+		(pts
+			(xy 175.9 233.8) (xy 177.5 234.5) (xy 175.9 235.2)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1a80af7f-68e0-4adf-b206-f1cfb0784416")
+	)
+	(polyline
+		(pts
+			(xy 175.9 123.8) (xy 177.5 124.5) (xy 175.9 125.2)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "1a956a1c-5909-4b7f-aa0d-961c85fe0e58")
+	)
+	(polyline
+		(pts
+			(xy 244.1 173.7) (xy 242.5 173) (xy 244.1 172.3)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "213fa313-6827-4c43-a0eb-a8ba6d0682b0")
+	)
+	(polyline
+		(pts
+			(xy 175.9 91.3) (xy 177.5 92) (xy 175.9 92.7)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "245e18e6-c021-46af-b57c-cc0a3147ee80")
+	)
+	(polyline
+		(pts
+			(xy 244.1 228.7) (xy 242.5 228) (xy 244.1 227.3)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2a6c77ee-0145-4b98-92ad-aa753cdee71b")
+	)
+	(rectangle
+		(start 310 163)
+		(end 402 183)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2df8752d-e060-4979-a61e-cf8b3fa90d04")
+	)
+	(polyline
+		(pts
+			(xy 210.7 47.4) (xy 210 49) (xy 209.3 47.4)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2ef699d6-6861-4109-96f2-4d2058edb652")
+	)
+	(rectangle
+		(start 18 112)
+		(end 110 137)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2ff13f2f-9075-49dd-9ace-6f2469f3c773")
+	)
+	(polyline
+		(pts
+			(xy 235.3 237.6) (xy 236 236) (xy 236.7 237.6)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "31cfb396-4bc7-4f1c-8308-47884f0b2a38")
+	)
+	(polyline
+		(pts
+			(xy 308.4 90.3) (xy 310 91) (xy 308.4 91.7)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "36e4da6c-7968-44b8-8f62-ad5be638ce1c")
+	)
+	(polyline
+		(pts
+			(xy 209.3 45.6) (xy 210 44) (xy 210.7 45.6)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3b3b21b3-d2e3-413d-b506-d43c3b796b45")
+	)
+	(polyline
+		(pts
+			(xy 234.4 257.3) (xy 236 258) (xy 234.4 258.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "40f873ca-5e64-49bd-a144-1d520e36fdd0")
+	)
+	(polyline
+		(pts
+			(xy 244.1 68.7) (xy 242.5 68) (xy 244.1 67.3)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "41140d38-c84c-4bfe-aa65-b2151a7f0373")
+	)
+	(rectangle
+		(start 18 49)
+		(end 110 72)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "41a22336-bb70-4417-9c3c-c6f362181a40")
+	)
+	(polyline
+		(pts
+			(xy 264 258) (xy 278 258) (xy 278 246) (xy 311 246)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4785258b-3d59-4e3e-acb6-d8feb5b6d367")
+	)
+	(polyline
+		(pts
+			(xy 356.5 239) (xy 356.5 237.8) (xy 236 237.8) (xy 236 236)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4a5c3131-4f31-40a6-b212-1806e05f51d8")
+	)
+	(rectangle
+		(start 153 249)
+		(end 180 267)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "59681c80-f32f-4e47-984a-8af5949fc7f6")
+	)
+	(polyline
+		(pts
+			(xy 308.4 101.3) (xy 310 102) (xy 308.4 102.7)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "60239e70-c174-4d0b-96db-24ff437b18dd")
+	)
+	(polyline
+		(pts
+			(xy 151.4 257.3) (xy 153 258) (xy 151.4 258.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "65233e81-a073-4820-a826-a7ca028bc82e")
+	)
+	(polyline
+		(pts
+			(xy 309.4 245.3) (xy 311 246) (xy 309.4 246.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "6672b2f8-63e3-4895-bffc-71e942b14c9e")
+	)
+	(polyline
+		(pts
+			(xy 175.9 213.8) (xy 177.5 214.5) (xy 175.9 215.2)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "7f781011-c092-4e63-9a91-ba28fcf6a442")
+	)
+	(polyline
+		(pts
+			(xy 244.1 102.7) (xy 242.5 102) (xy 244.1 101.3)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "80737a93-743e-4674-9571-abe84153fea3")
+	)
+	(polyline
+		(pts
+			(xy 244.1 57.7) (xy 242.5 57) (xy 244.1 56.3)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8bb09492-b461-4401-9588-8d6cd553ba7f")
+	)
+	(polyline
+		(pts
+			(xy 111.6 92.7) (xy 110 92) (xy 111.6 91.3)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "9213bbd2-0ff2-4b86-9828-718f076fdcfa")
+	)
+	(rectangle
+		(start 310 83)
+		(end 402 108)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "98ed30b6-5239-48f5-9071-7ea1e143f4af")
+	)
+	(polyline
+		(pts
+			(xy 308.4 67.3) (xy 310 68) (xy 308.4 68.7)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "9d33be57-001e-47be-ae39-e91a86de1366")
+	)
+	(rectangle
+		(start 18 79)
+		(end 110 105)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ada6ec51-4cfb-4ed6-8bf9-63aac8cedaa7")
+	)
+	(polyline
+		(pts
+			(xy 67.4 257.3) (xy 69 258) (xy 67.4 258.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b02890b4-aec5-4517-bbcf-56fc42da7223")
+	)
+	(rectangle
+		(start 18 249)
+		(end 61 267)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b54e3973-fd3f-48ac-a52f-42f71338033c")
+	)
+	(polyline
+		(pts
+			(xy 111.6 215.2) (xy 110 214.5) (xy 111.6 213.8)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "b5e67a0a-a0a4-4390-8b46-261ef76433ba")
+	)
+	(rectangle
+		(start 310 49)
+		(end 402 74)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ba30870c-abf0-4aac-b6f9-610708b6d5af")
+	)
+	(rectangle
+		(start 310 192)
+		(end 402 213)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "be1fcc31-9ea4-4cd6-a677-5e2fd920474a")
+	)
+	(polyline
+		(pts
+			(xy 308.4 134.3) (xy 310 135) (xy 308.4 135.7)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c1b46c4e-e9ae-4048-8e46-15dd1d0ad554")
+	)
+	(rectangle
+		(start 115 249)
+		(end 145 267)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c1ff9ab1-d355-43b8-932d-3e4278dbab99")
+	)
+	(polyline
+		(pts
+			(xy 244.1 203.2) (xy 242.5 202.5) (xy 244.1 201.8)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "c780cee3-14d2-40ee-a040-e3bcec3e62f0")
+	)
+	(polyline
+		(pts
+			(xy 167.6 235.2) (xy 166 234.5) (xy 167.6 233.8)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "cb469bc0-d548-461a-ace1-5705260880e2")
+	)
+	(polyline
+		(pts
+			(xy 308.4 201.8) (xy 310 202.5) (xy 308.4 203.2)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "cc9c231e-3ac7-4070-a03c-c4de94568f82")
+	)
+	(rectangle
+		(start 310 117)
+		(end 402 153)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d3ddbba0-45c6-49a4-8c51-c3cf8e582e15")
+	)
+	(rectangle
+		(start 177.5 49)
+		(end 242.5 236)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d49c8677-d858-49cd-8171-ec6a0e98a44c")
+	)
+	(polyline
+		(pts
+			(xy 175.9 182.8) (xy 177.5 183.5) (xy 175.9 184.2)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d8069c9a-5dfc-49cb-93f0-62f937b3e3f1")
+	)
+	(polyline
+		(pts
+			(xy 186.4 257.3) (xy 188 258) (xy 186.4 258.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d80f1258-1f3f-431d-819d-fc12444a2910")
+	)
+	(rectangle
+		(start 188 249)
+		(end 228 267)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d89c0e8d-ffa6-4be7-90f8-180228d67620")
+	)
+	(rectangle
+		(start 116 228)
+		(end 166 241)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "d9de942a-bd5e-4fe8-b1ba-1d093a6a1f9c")
+	)
+	(rectangle
+		(start 18 145)
+		(end 110 165)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "dc2e720d-cd3f-49dc-9bf2-217bb91bd53b")
+	)
+	(rectangle
+		(start 236 249)
+		(end 264 267)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e076b8d6-c107-42c6-a523-f9fac1ac63d9")
+	)
+	(rectangle
+		(start 18 202)
+		(end 110 227)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e1f7ec59-95fa-4b59-8be2-f6ddf3c8cd4c")
+	)
+	(polyline
+		(pts
+			(xy 111.6 61.2) (xy 110 60.5) (xy 111.6 59.8)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e23c6243-db96-4c57-8f89-a871ad0a37e7")
+	)
+	(polyline
+		(pts
+			(xy 113.4 257.3) (xy 115 258) (xy 113.4 258.7)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e4f5cd50-578d-488a-9fba-0292d04fb176")
+	)
+	(polyline
+		(pts
+			(xy 244.1 135.7) (xy 242.5 135) (xy 244.1 134.3)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e7c83e80-446d-4f67-b419-4b03f73af016")
+	)
+	(polyline
+		(pts
+			(xy 175.9 154.3) (xy 177.5 155) (xy 175.9 155.7)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ebd47baf-fffc-43f1-8950-a932a37aa50b")
+	)
+	(polyline
+		(pts
+			(xy 129.3 242.6) (xy 130 241) (xy 130.7 242.6)
+		)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ed5cae68-cb75-4a35-acfe-9ef9f4962ebe")
+	)
+	(rectangle
+		(start 183 31)
+		(end 237 44)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f04a73ef-577b-4e8c-9793-d1dfdb03634d")
+	)
+	(rectangle
+		(start 69 249)
+		(end 107 267)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f0b606e1-a99d-4113-8198-46d82d240ad6")
+	)
+	(polyline
+		(pts
+			(xy 111.6 155.7) (xy 110 155) (xy 111.6 154.3)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f6548655-efc7-4752-b627-8e1b892ecdf5")
+	)
+	(rectangle
+		(start 18 173)
+		(end 110 194)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f9ad4a58-c1e7-4389-a3eb-a560e2019d3a")
+	)
+	(rectangle
+		(start 310 221)
+		(end 402 235)
+		(stroke
+			(width 0.22)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fb177325-66bd-4e8e-9313-9ad42cc8751c")
+	)
+	(polyline
+		(pts
+			(xy 250 249) (xy 250 241) (xy 222 241) (xy 222 236)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "fc4ce9d7-9720-4215-9a0c-5976680cd789")
+	)
+	(text "U7 TPS2121"
+		(exclude_from_sim no)
+		(at 88 255.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+				(bold yes)
+			)
+		)
+		(uuid "038f9e4c-4f6e-40c4-bcf8-c4ff25c6ac36")
+	)
+	(text "I2C"
+		(exclude_from_sim no)
+		(at 143.75 180.4 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "05a9cd82-234d-4de0-b12b-d25ab8c991df")
+	)
+	(text "3V3"
+		(exclude_from_sim no)
+		(at 250 258 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "09cc9a02-f7f5-4974-947f-b30af0a88685")
+	)
+	(text "I2C + Q1 điều khiển CAM_RESET"
+		(exclude_from_sim no)
+		(at 356 66.15 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "0f8016f4-d563-49d7-91d6-bab6716b452b")
+	)
+	(text "3V3 / VDD_HP"
+		(exclude_from_sim no)
+		(at 210 174 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.4 1.4)
+			)
+		)
+		(uuid "12b2c875-a755-428b-be79-3a495fa37fa4")
+	)
+	(text "Các miền nguồn P4"
+		(exclude_from_sim no)
+		(at 210 163 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.65 1.65)
+				(bold yes)
+			)
+		)
+		(uuid "15c34cd3-c01b-4e02-891f-10bf042e9e5d")
+	)
+	(text "J11 VBUS chỉ dùng nhận biết USB HS, không vào TPS2121."
+		(exclude_from_sim no)
+		(at 139 279 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "1e8ef8a5-819d-4133-94f4-f639b37ade37")
+	)
+	(text "J6 - DISPLAY FFC 15P / 1 mm"
+		(exclude_from_sim no)
+		(at 356 91.35 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.75 1.75)
+				(bold yes)
+			)
+		)
+		(uuid "21e627b5-4fbc-4717-9f28-f695e3fa7829")
+	)
+	(text "VDDO_3 / USB PHY / MIPI PHY"
+		(exclude_from_sim no)
+		(at 210 194 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.4 1.4)
+			)
+		)
+		(uuid "25aab6e4-1a6e-48ff-a927-c74d7677dcfa")
+	)
+	(text "Chi tiết: sheet ESP32_P4"
+		(exclude_from_sim no)
+		(at 210 222 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.4 1.4)
+			)
+		)
+		(uuid "2f262a1d-337e-47fb-96d0-fe118f449be7")
+	)
+	(text "L3 4.7 uH -> 3V3"
+		(exclude_from_sim no)
+		(at 208 260.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.2 1.2)
+			)
+		)
+		(uuid "30e3d733-2fe0-4329-acc7-9028b493fe5a")
+	)
+	(text "J1 UART; SW3 RESET / SW4 BOOT"
+		(exclude_from_sim no)
+		(at 64 96.65 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "317a083c-2529-4990-b9fb-b4c7e0714803")
+	)
+	(text "NGUỒN 5 V"
+		(exclude_from_sim no)
+		(at 39.5 255.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.55 1.55)
+				(bold yes)
+			)
+		)
+		(uuid "31945b13-142b-4669-825a-ab6c7dde68c1")
+	)
+	(text "5V_SYS"
+		(exclude_from_sim no)
+		(at 166.5 258 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.7 1.7)
+				(bold yes)
+			)
+		)
+		(uuid "32718fb6-6f71-4e65-b461-f85c9a0330ca")
+	)
+	(text "USB HS D+ / D- + VBUS sense"
+		(exclude_from_sim no)
+		(at 276.25 199.4 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "3649b4d4-a64f-4103-94ad-fe2b59c94d64")
+	)
+	(text "USB Serial/JTAG / USB 2.0 HS"
+		(exclude_from_sim no)
+		(at 210 112 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "38e3bf1f-fb21-4515-9620-f84a0c529927")
+	)
+	(text "VDDO_FLASH / VDDO_PSRAM"
+		(exclude_from_sim no)
+		(at 210 184 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.4 1.4)
+			)
+		)
+		(uuid "391402ba-de2f-4732-b347-22c41e89b852")
+	)
+	(text "DM3AT-SF-PEJM5; Card Detect"
+		(exclude_from_sim no)
+		(at 64 157.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "3cdd30d6-7695-483b-9a6a-ea9599bc0c4d")
+	)
+	(text "VEML7700-TT"
+		(exclude_from_sim no)
+		(at 64 186.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "431e4a80-313b-48b4-ab4e-7555424760ef")
+	)
+	(text "VDD_HP"
+		(exclude_from_sim no)
+		(at 290 234.3 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.2 1.2)
+			)
+		)
+		(uuid "4488522d-85d0-4245-ad15-339f776a85bc")
+	)
+	(text "Đo dòng / áp / công suất"
+		(exclude_from_sim no)
+		(at 141 237.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.25 1.25)
+			)
+		)
+		(uuid "46db4b37-dea3-4a3f-bd01-e329a127429c")
+	)
+	(text "Wi-Fi / Bluetooth LE"
+		(exclude_from_sim no)
+		(at 64 92.85 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "484f7f65-6f0d-4557-8f90-0e0d4cb1de29")
+	)
+	(text "ES8311 -> U12 NS4150B -> J10"
+		(exclude_from_sim no)
+		(at 356 139.65 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.4 1.4)
+			)
+		)
+		(uuid "4a0a1a87-28d7-498c-b70d-a2e90e1cae68")
+	)
+	(text "U4  ESP32-P4"
+		(exclude_from_sim no)
+		(at 210 65 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+				(bold yes)
+			)
+		)
+		(uuid "4b76b83d-8777-488f-a6a2-926b5a58e18b")
+	)
+	(text "U9 - CẢM BIẾN ÁNH SÁNG"
+		(exclude_from_sim no)
+		(at 64 181.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "4e3a3eca-aa09-446f-a900-1ae721ef6dd7")
+	)
+	(text "U13 TPD2E2U06; VBUS sense"
+		(exclude_from_sim no)
+		(at 356 205.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "4eed0cd6-62fe-484d-88a4-bad1d158216e")
+	)
+	(text "GPIO + I2C"
+		(exclude_from_sim no)
+		(at 143.75 211.4 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "527b72d1-be11-4fa2-b057-9ecea0d04ab4")
+	)
+	(text "U2 IP101GRI + Y2 25 MHz"
+		(exclude_from_sim no)
+		(at 64 125.35 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "54af896f-f776-439b-8ada-dc4dcc259477")
+	)
+	(text "SDMMC / SDIO"
+		(exclude_from_sim no)
+		(at 210 122 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "57a68059-2044-47fe-ab74-cedda18133b2")
+	)
+	(text "5V_SYS / 3V3 / VDD_HP được phân phối theo các sheet chi tiết."
+		(exclude_from_sim no)
+		(at 139 274 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "5806822c-0357-46b0-b75a-d3fd5f9ce33b")
+	)
+	(text "SW5 USER1 / SW6 USER2"
+		(exclude_from_sim no)
+		(at 64 219.15 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "5a741981-d500-4d11-bc98-a851b8fcfe0f")
+	)
+	(text "SDMMC 4-bit + SD_DET"
+		(exclude_from_sim no)
+		(at 143.75 151.9 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "5b3cdf34-2431-40fb-affd-0ee45dfe9308")
+	)
+	(text "U6 - FLASH QSPI"
+		(exclude_from_sim no)
+		(at 64 58.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "5c6b26e4-9748-4ce6-a77a-90c69e66f276")
+	)
+	(text "3V3"
+		(exclude_from_sim no)
+		(at 259 244.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.2 1.2)
+			)
+		)
+		(uuid "6571b61a-b67b-4ff4-aba8-1cddcd2552bf")
+	)
+	(text "DESIGN BLOCK - ESP32-P4 DEVKIT"
+		(exclude_from_sim no)
+		(at 210 20 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.7 2.7)
+				(bold yes)
+			)
+		)
+		(uuid "67ddfa1f-8651-45de-a9cd-5c5d4d7a67bd")
+	)
+	(text "MK1 CMA-4544PF-W -> ES8311"
+		(exclude_from_sim no)
+		(at 356 135.85 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.4 1.4)
+			)
+		)
+		(uuid "6b6d04f7-8989-444b-a8be-5bbfc44b7e1c")
+	)
+	(text "ETHERNET 10/100"
+		(exclude_from_sim no)
+		(at 64 120.35 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "6cf1b040-5c05-4df8-acff-10fc28b9ce80")
+	)
+	(text "U8 INA226"
+		(exclude_from_sim no)
+		(at 141 232.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+			)
+		)
+		(uuid "6dde17ac-ab2e-471c-ac73-e383a70a2096")
+	)
+	(text "MIPI-CSI 2 lane"
+		(exclude_from_sim no)
+		(at 356 62.35 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "6dff8f00-f268-48ef-ad48-a7a5cee5bb4a")
+	)
+	(text "revision 1.3"
+		(exclude_from_sim no)
+		(at 210 73 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.9 1.9)
+				(bold yes)
+			)
+		)
+		(uuid "72729e04-b4b1-4def-81ea-3dabab2819c8")
+	)
+	(text "Tổng quan theo schematic hiện tại - linh kiện, giao tiếp và luồng nguồn"
+		(exclude_from_sim no)
+		(at 210 26 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "77c833f1-9204-461a-b961-9d6df9b1876e")
+	)
+	(text "U1 - ESP32-C6-MINI-1"
+		(exclude_from_sim no)
+		(at 64 87.85 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "82381f3f-1afc-4dae-ac19-3378d38e9392")
+	)
+	(text "J11 - USB-C USB 2.0 HS"
+		(exclude_from_sim no)
+		(at 356 200.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "867dc8d9-8301-4d01-98be-d757f825718b")
+	)
+	(text "I2C"
+		(exclude_from_sim no)
+		(at 171.75 231 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.15 1.15)
+			)
+		)
+		(uuid "8874a25c-b63a-48bc-9ffb-2b826d07853c")
+	)
+	(text "RMII + MDC / MDIO + RESET"
+		(exclude_from_sim no)
+		(at 143.75 121.4 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "8a3c8196-ab51-4b33-886e-467e8f852908")
+	)
+	(text "J10: SPK_P / SPK_N"
+		(exclude_from_sim no)
+		(at 356 143.45 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.4 1.4)
+			)
+		)
+		(uuid "8b3e67a3-af8d-4d14-811c-e395231648f9")
+	)
+	(text "Nguồn 3V3 tại đầu nối"
+		(exclude_from_sim no)
+		(at 356 100.15 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "8ddec025-9443-4525-9da1-245ed9e685c6")
+	)
+	(text "I2C"
+		(exclude_from_sim no)
+		(at 276.25 98.8 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "931663a5-9310-4ad1-b473-d481e81f2d62")
+	)
+	(text "10 mOhm"
+		(exclude_from_sim no)
+		(at 130 260.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "9635485c-d36a-474d-bd85-fd1528f76986")
+	)
+	(text "J2 - microSD"
+		(exclude_from_sim no)
+		(at 64 152.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "97373489-0083-4da3-b4f1-3fd0e2e0edd1")
+	)
+	(text "Ethernet MAC / RMII"
+		(exclude_from_sim no)
+		(at 210 132 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "98fcb982-94bd-4201-8708-c4809615dfa7")
+	)
+	(text "J3 USB-C / J5 VBUS"
+		(exclude_from_sim no)
+		(at 39.5 260.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.25 1.25)
+			)
+		)
+		(uuid "99609a54-377d-4ef4-944c-541df8402b45")
+	)
+	(text "I2S / I2C / GPIO"
+		(exclude_from_sim no)
+		(at 210 142 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "9e8a3df0-a655-4464-bc62-031caaa72eac")
+	)
+	(text "QSPI"
+		(exclude_from_sim no)
+		(at 143.75 57.4 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "9eba30aa-5de4-4f69-9bf8-23123ddd05db")
+	)
+	(text "U3 TPD2E2U06 - bảo vệ ESD"
+		(exclude_from_sim no)
+		(at 356 175.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "a0fcd0e5-bfd3-405c-b7b8-3751c9f3f8df")
+	)
+	(text "Power MUX -> 5V_MUX"
+		(exclude_from_sim no)
+		(at 88 260.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.2 1.2)
+			)
+		)
+		(uuid "a4934e73-8fe6-4620-9434-f4f2d8482d9a")
+	)
+	(text "U11 AP63300"
+		(exclude_from_sim no)
+		(at 208 255.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+				(bold yes)
+			)
+		)
+		(uuid "a5285b88-f8f2-4954-9cfe-0fb63e21fdd5")
+	)
+	(text "MIPI-DSI 2 lane + I2C"
+		(exclude_from_sim no)
+		(at 356 96.35 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "b0ec3eb6-d4be-4674-8cfb-3650cfa26929")
+	)
+	(text "J7 - HEADER GPIO 2x12"
+		(exclude_from_sim no)
+		(at 64 210.35 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "b163a59b-8129-4d1c-a875-d3da071445d3")
+	)
+	(text "MIPI-CSI 2 lane"
+		(exclude_from_sim no)
+		(at 276.25 53.9 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "b5594d46-c069-49ae-8f55-87cac03ebce8")
+	)
+	(text "J4 - CAMERA FFC 15P / 1 mm"
+		(exclude_from_sim no)
+		(at 356 57.35 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.75 1.75)
+				(bold yes)
+			)
+		)
+		(uuid "b5e824d1-00d3-4b57-8312-2614a55f66cb")
+	)
+	(text "J5 - USB-C NẠP / DEBUG"
+		(exclude_from_sim no)
+		(at 356 170.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "b81f791f-79e1-485c-a2fa-bfe0bffdf676")
+	)
+	(text "3V3 -> VDD_HP"
+		(exclude_from_sim no)
+		(at 356.5 247.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "babcd2ef-c350-41c6-8515-1bce75e51e00")
+	)
+	(text "Kelvin"
+		(exclude_from_sim no)
+		(at 142 245.5 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.1 1.1)
+			)
+		)
+		(uuid "bcf107aa-0e0a-4101-98a2-6f1bdc4844dc")
+	)
+	(text "MIPI-DSI 2 lane"
+		(exclude_from_sim no)
+		(at 276.25 87.9 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "bd353b82-3655-4fa3-a33c-10684e220b5e")
+	)
+	(text "CHIP_PU / BOOT"
+		(exclude_from_sim no)
+		(at 276.25 224.9 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "bd4fe525-ce7c-48b2-b340-60798ba7ee68")
+	)
+	(text "USB Serial/JTAG"
+		(exclude_from_sim no)
+		(at 276.25 169.9 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "c2adc4f3-3c7f-4438-89bf-5092c3f6e032")
+	)
+	(text "SDIO 4-bit + C6_EN"
+		(exclude_from_sim no)
+		(at 143.75 88.9 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "c372e6aa-04b3-4b71-a044-1e00bfaec7eb")
+	)
+	(text "Đường trên trang này là liên kết chức năng, không tạo net điện."
+		(exclude_from_sim no)
+		(at 139 284 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.2 1.2)
+			)
+		)
+		(uuid "cb51e7c4-c470-4080-b454-1273d6359da3")
+	)
+	(text "U10 ES8311: I2S + I2C"
+		(exclude_from_sim no)
+		(at 356 132.05 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.4 1.4)
+			)
+		)
+		(uuid "ce196951-57e2-4a47-aa07-76971567312b")
+	)
+	(text "SW1 RESET / SW2 BOOT"
+		(exclude_from_sim no)
+		(at 356 228 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "cec54bfd-5bba-4a05-9e21-43304f440322")
+	)
+	(text "U5 TLV62569 + L2 2.2 uH"
+		(exclude_from_sim no)
+		(at 356.5 242.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.6 1.6)
+				(bold yes)
+			)
+		)
+		(uuid "d5d725cb-5349-4d26-9706-cc2aa8daadff")
+	)
+	(text "MIPI-CSI / MIPI-DSI"
+		(exclude_from_sim no)
+		(at 210 102 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "d609340b-4cce-4c31-b74f-f2c4c5503b9b")
+	)
+	(text "W25Q128JVSIQ - 128 Mbit / 16 MB"
+		(exclude_from_sim no)
+		(at 64 63.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "d62de468-1592-462c-9b05-02be97cee5b5")
+	)
+	(text "J9 HR913550A - RJ45 MagJack"
+		(exclude_from_sim no)
+		(at 64 129.15 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "db153e5d-811e-4d32-8f7c-ef835ee8ecaf")
+	)
+	(text "I2C + CAM_RESET"
+		(exclude_from_sim no)
+		(at 276.25 64.8 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "df04969d-d2df-4d14-831e-3868f7e95997")
+	)
+	(text "40 MHz"
+		(exclude_from_sim no)
+		(at 210 40.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "e18613d4-5d30-4ef5-b856-35b18b7f1d24")
+	)
+	(text "13 GPIO + I2C; 3V3 / 5V / GND"
+		(exclude_from_sim no)
+		(at 64 215.35 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.45 1.45)
+			)
+		)
+		(uuid "e28597ab-da6a-49a6-9d27-a186d550902f")
+	)
+	(text "AUDIO - CODEC / MICRO / LOA"
+		(exclude_from_sim no)
+		(at 356 127.05 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.8 1.8)
+				(bold yes)
+			)
+		)
+		(uuid "e343b016-a689-4d9b-80a8-5967c5ddfd09")
+	)
+	(text "CPU / SRAM / PSRAM trong chip"
+		(exclude_from_sim no)
+		(at 210 84 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "f2c1d0c0-79d3-47bf-a227-6eac3356b3f6")
+	)
+	(text "I2S + MCLK / I2C / PA_EN"
+		(exclude_from_sim no)
+		(at 276.25 131.9 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.35 1.35)
+			)
+		)
+		(uuid "f616568b-ffc7-48ba-9fed-2c6eb727e539")
+	)
+	(text "Y1 - THẠCH ANH"
+		(exclude_from_sim no)
+		(at 210 35.25 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.65 1.65)
+				(bold yes)
+			)
+		)
+		(uuid "f7bf91b8-3768-41df-af61-f4bdfd6e99ae")
+	)
+	(text "R24 SHUNT"
+		(exclude_from_sim no)
+		(at 130 255.75 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.5 1.5)
+				(bold yes)
+			)
+		)
+		(uuid "fa86c913-e872-4d26-bb6b-5d0ef8b29419")
+	)
+	(polyline
+		(pts
+			(xy 110 214.5) (xy 177.5 214.5)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "013f68d5-bb8a-4674-a69c-23bf3a0b5c0d")
+	)
+	(polyline
+		(pts
+			(xy 242.5 68) (xy 310 68)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "0168577b-8810-475d-bf8d-a7f57708cd3b")
+	)
+	(polyline
+		(pts
+			(xy 145 258) (xy 153 258)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(uuid "1b35fc72-9c66-4ca9-ab50-bca11c3f3fcf")
+	)
+	(polyline
+		(pts
+			(xy 110 60.5) (xy 177.5 60.5)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "43f15eaa-be06-4b09-a092-d060d5d78c52")
+	)
+	(polyline
+		(pts
+			(xy 310 57) (xy 242.5 57)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "47747615-b599-4f33-82bb-85e5d4926e21")
+	)
+	(polyline
+		(pts
+			(xy 242.5 202.5) (xy 310 202.5)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "5543ae12-ba95-4a35-a94e-bc0bf8edb958")
+	)
+	(polyline
+		(pts
+			(xy 242.5 91) (xy 310 91)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "571743a5-725d-4c19-ae1a-8a9d5941ba8b")
+	)
+	(polyline
+		(pts
+			(xy 110 92) (xy 177.5 92)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "5eb7a44b-19e0-44f7-987a-5577251eb536")
+	)
+	(polyline
+		(pts
+			(xy 107 258) (xy 115 258)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(uuid "5fbf0edb-0ed3-4851-9c4e-a9d224c448dc")
+	)
+	(polyline
+		(pts
+			(xy 130 249) (xy 130 241)
+		)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(uuid "635ea4d5-b77b-436f-aab1-f120d9ec65b4")
+	)
+	(polyline
+		(pts
+			(xy 228 258) (xy 236 258)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(uuid "78ebefca-1fd0-4050-9115-e2eb6e9de5a1")
+	)
+	(polyline
+		(pts
+			(xy 110 155) (xy 177.5 155)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "8ba8c6f0-9ef4-46c4-97b2-326f1bd29194")
+	)
+	(polyline
+		(pts
+			(xy 182 153) (xy 238 153)
+		)
+		(stroke
+			(width 0.14)
+			(type solid)
+		)
+		(uuid "9bfe03c0-52d7-40d0-b578-ae1431338379")
+	)
+	(polyline
+		(pts
+			(xy 242.5 135) (xy 310 135)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "b4be047d-06cc-441a-a39c-1c5c4624eb06")
+	)
+	(polyline
+		(pts
+			(xy 180 258) (xy 188 258)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(uuid "b5dfdf8c-93ac-40d6-81f4-c82102e7a07f")
+	)
+	(polyline
+		(pts
+			(xy 310 228) (xy 242.5 228)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "c08f4d8f-0cb0-4b3d-bc29-e9f259096b38")
+	)
+	(polyline
+		(pts
+			(xy 61 258) (xy 69 258)
+		)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(uuid "c0e16b43-1d02-429f-b5dc-4222342bba38")
+	)
+	(polyline
+		(pts
+			(xy 242.5 102) (xy 310 102)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "da1c8357-cefd-4aad-8dc8-d9b87601f2ff")
+	)
+	(polyline
+		(pts
+			(xy 166 234.5) (xy 177.5 234.5)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "db657f23-cc97-4496-b4f9-1c211b3a04ce")
+	)
+	(polyline
+		(pts
+			(xy 182 91) (xy 238 91)
+		)
+		(stroke
+			(width 0.14)
+			(type solid)
+		)
+		(uuid "e9f156d4-8cf3-4d05-a78d-5c5b86a2fb0e")
+	)
+	(polyline
+		(pts
+			(xy 110 124.5) (xy 177.5 124.5)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "ebb9835f-ae8f-4968-9607-2fbeec3ccb68")
+	)
+	(polyline
+		(pts
+			(xy 242.5 173) (xy 310 173)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "f2df2f0a-b66f-461d-b2bf-afb153c1f898")
+	)
+	(polyline
+		(pts
+			(xy 210 44) (xy 210 49)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "f5d5f5a2-5aff-476d-b7b7-47cbad3ba0d1")
+	)
+	(polyline
+		(pts
+			(xy 110 183.5) (xy 177.5 183.5)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(uuid "fdc6ed92-f3f8-459b-834d-c82a73286998")
+	)
+)

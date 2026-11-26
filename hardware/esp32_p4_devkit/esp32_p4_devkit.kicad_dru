@@ -1,0 +1,12 @@
+(version 1)
+
+# A smaller clearance is permitted ONLY between opposite polarities of one pair.
+# Width/gap for routing comes from that netclass's tuning profile.
+(rule "Controlled differential intra-pair clearance"
+  (condition "(A.hasNetclass('MIPI') || A.hasNetclass('USB_HS') || A.hasNetclass('USB_JTAG') || A.hasNetclass('ETH_MDI')) && AB.isCoupledDiffPair()")
+  (constraint clearance (min 0.14mm)))
+
+# Crystal traces are routed as short individual traces on F.Cu, not as 100-ohm lanes.
+(rule "P4 crystal no vias"
+  (condition "A.hasNetclass('XTAL')")
+  (constraint disallow via))

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 950" width="1400" height="950">
+<rect width="1400" height="950" fill="#fff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#526575"/></marker></defs>
+<text x="40" y="56.66" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#172e3e">ESP32-P4 DevKit</text>
+<text x="40" y="108.98" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#172e3e">Cấp nguồn và đo dòng</text>
+<rect x="40" y="131" width="248" height="90" rx="9" fill="#f2f5f8" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="164.0" y="161.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">J3 và J5</text>
+<text x="164.0" y="182.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">USB-C 5 V</text>
+<text x="164.0" y="203.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">J3 adapter · J5 VBUS</text>
+<rect x="308" y="131" width="248" height="90" rx="9" fill="#f2f5f8" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="432.0" y="161.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U7 TPS2121</text>
+<text x="432.0" y="182.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Chọn nguồn</text>
+<text x="432.0" y="203.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">5V_MUX</text>
+<rect x="576" y="131" width="248" height="90" rx="9" fill="#f2f5f8" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="700.0" y="161.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">R24 · 10 mΩ</text>
+<text x="700.0" y="182.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">5V_SYS sau shunt</text>
+<text x="700.0" y="203.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">U8 INA226 đo dòng/áp</text>
+<rect x="844" y="131" width="248" height="90" rx="9" fill="#f2f5f8" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="968.0" y="161.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U11 AP63300 + L3</text>
+<text x="968.0" y="182.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Nguồn chính 3V3</text>
+<text x="968.0" y="203.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">P4, C6 và ngoại vi</text>
+<rect x="1112" y="131" width="248" height="90" rx="9" fill="#f2f5f8" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="1236.0" y="161.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U5 TLV62569 + L2</text>
+<text x="1236.0" y="182.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">VDD_HP</text>
+<text x="1236.0" y="203.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Nguồn lõi P4</text>
+<path d="M288 176L308 176" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)"/>
+<path d="M556 176L576 176" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)"/>
+<path d="M824 176L844 176" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)"/>
+<path d="M1092 176L1112 176" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)"/>
+<text x="40" y="286.17" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#172e3e">Xử lý và giao tiếp</text>
+<rect x="482" y="310" width="436" height="552" rx="9" fill="#e7eff5" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="700.0" y="550.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U4 ESP32-P4 rev 1.3</text>
+<text x="700.0" y="571.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Bộ xử lý chính</text>
+<text x="700.0" y="592.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Y1 40 MHz · PSRAM trong package</text>
+<text x="700.0" y="613.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">SW1 RESET · SW2 BOOT</text>
+<text x="700.0" y="634.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">I²C dùng chung, có U8 INA226</text>
+<rect x="40" y="310" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="235.0" y="341.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">J5 và J11</text>
+<text x="235.0" y="362.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">J5 · USB Serial/JTAG</text>
+<text x="235.0" y="383.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">J11 · USB 2.0 High-Speed</text>
+<rect x="970" y="310" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="1165.0" y="341.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">J4 Camera</text>
+<text x="1165.0" y="362.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">MIPI CSI-2 · 2 lane</text>
+<text x="1165.0" y="383.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">I²C · CAM_RESET</text>
+<path d="M430 356L482 356" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<path d="M918 356L970 356" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="40" y="425" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="235.0" y="456.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U1 ESP32-C6-MINI-1-N4</text>
+<text x="235.0" y="477.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">SDIO 4-bit · Wi-Fi/BLE</text>
+<text x="235.0" y="498.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">J1 UART nạp C6</text>
+<rect x="970" y="425" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="1165.0" y="456.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">J6 Màn hình</text>
+<text x="1165.0" y="477.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">MIPI DSI · 2 lane</text>
+<text x="1165.0" y="498.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">3V3 · I²C</text>
+<path d="M430 471L482 471" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<path d="M918 471L970 471" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="40" y="540" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="235.0" y="571.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U2 IP101GRI và J9</text>
+<text x="235.0" y="592.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">RMII tới P4</text>
+<text x="235.0" y="613.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Ethernet 10/100 qua RJ45</text>
+<rect x="970" y="540" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="1165.0" y="571.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U10 ES8311 · U12 NS4150B</text>
+<text x="1165.0" y="592.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">I²S · I²C</text>
+<text x="1165.0" y="613.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Micro MK1 · loa ngoài J10</text>
+<path d="M430 586L482 586" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<path d="M918 586L970 586" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="40" y="655" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="235.0" y="686.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">J2 microSD</text>
+<text x="235.0" y="707.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">SDMMC 4-bit</text>
+<text x="235.0" y="728.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Card detect</text>
+<rect x="970" y="655" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="1165.0" y="697.0" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U9 VEML7700-TT</text>
+<text x="1165.0" y="718.0" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Cảm biến ánh sáng · I²C</text>
+<path d="M430 701L482 701" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<path d="M918 701L970 701" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="40" y="770" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="235.0" y="812.0" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">U6 W25Q128JVSIQ</text>
+<text x="235.0" y="833.0" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">Flash QSPI 16 MB</text>
+<rect x="970" y="770" width="390" height="92" rx="9" fill="#f6f8fa" stroke="#9aaab5" stroke-width="1.5"/>
+<text x="1165.0" y="801.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#172e3e">J7 Header 2×12</text>
+<text x="1165.0" y="822.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">13 GPIO · I²C</text>
+<text x="1165.0" y="843.5" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="15" fill="#172e3e">3V3 · 5V_SYS · GND</text>
+<path d="M430 816L482 816" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<path d="M918 816L970 816" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<text x="40" y="917.44" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#172e3e">Bản KiCad chính · hardware/esp32_p4_devkit · 26/11/2026</text>
+</svg>
